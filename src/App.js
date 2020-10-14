@@ -7,13 +7,16 @@ const TEAM_ID = '128734';
 
 function App() {
   const [rank, setRank] = useState(247);
-
+  const [rank2, setRank2] = useState(38);
   return (
     <Container>
       <Title>ARESx</Title>
       <Rank>
-        Current Rank: <AnimatedNumber initial={1000} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
+        CTFTime Global Rank: <AnimatedNumber initial={1000} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
       </Rank>
+      <Rank1>
+        CTFTime USA Rank: <AnimatedNumber initial={500} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
+      </Rank1>
       <Navigation>
         <li><a href="#">Write Ups</a></li>
         <li><a href="#">Members</a></li>
