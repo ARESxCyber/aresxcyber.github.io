@@ -14,9 +14,9 @@ function App() {
       <Rank>
         CTFTime Global Rank: <AnimatedNumber initial={1000} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
       </Rank>
-      <Rank1>
-        CTFTime USA Rank: <AnimatedNumber initial={500} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
-      </Rank1>
+      <Rank>
+        CTFTime USA Rank: <AnimatedNumber initial={500} duration={2000} number={rank2} component="span" format={Math.floor} fps={20} />
+      </Rank>
       <Navigation>
         <li><a href="#">Write Ups</a></li>
         <li><a href="#">Members</a></li>
