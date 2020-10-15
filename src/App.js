@@ -8,8 +8,10 @@ const TEAM_ID = '128734';
 function App() {
   const [rank, setRank] = useState(247);
   const [rank2, setRank2] = useState(38);
+  const image = require('./images/ARESx_Logo.png');
   return (
     <Container>
+      <Img src={image}/>
       <Title>ARESx</Title>
       <Rank>
         CTFTime Global Rank: <AnimatedNumber initial={1000} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
@@ -68,6 +70,11 @@ const Navigation = styled.ul`
   a:hover {
     color: #af0000;
   }
+`;
+
+const Img = styled.img`
+  width: 300px;
+  margin: 0 0 20px 0;
 `;
 
 export default App;
