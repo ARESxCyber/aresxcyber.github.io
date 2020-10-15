@@ -37,6 +37,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   color: red;
+  background-color: black;
 `;
 
 const Title = styled.h1`
