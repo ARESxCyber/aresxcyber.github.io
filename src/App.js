@@ -1,29 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import AnimatedNumber from '@jhonnold/react-animated-number';
-import { get } from 'axios';
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Members from './pages/Members';
+import WriteUps from './pages/WriteUps';
+import Scores from './pages/Scores';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
 const TEAM_ID = '128734';
 
 function App() {
-  const [rank, setRank] = useState(247);
-  const [rank2, setRank2] = useState(38);
-  const image = require('./images/ARESx_Logo.png');
   return (
     <Container>
-      <Img src={image}/>
-      <Title>ARESx</Title>
-      <Rank>
-        CTFTime Global Rank: <AnimatedNumber initial={1000} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
-      </Rank>
-      <Rank>
-        CTFTime USA Rank: <AnimatedNumber initial={500} duration={2000} number={rank2} component="span" format={Math.floor} fps={20} />
-      </Rank>
-      <Navigation>
-        <li><a href="#">Write Ups</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Scores</a></li>
-      </Navigation>
+      <Router>
+        <Navigation>
+          <Navbar />
+        </Navigation>
+        <Switch>
+          <Route path='/home'>
+            <Home />
+          </Route>
+          <Route path="/write_ups">
+            <WriteUps />
+          </Route>
+          <Route path="/members">
+            <Members />
+          </Route>
+          <Route path="/scores">
+            <Scores />
+          </Route>
+          <Route exact path="/" render={() => (<Redirect to="/home" />)} />
+        </Switch>
+      </Router>
+      
     </Container>
   );
 }
@@ -40,24 +54,18 @@ const Container = styled.div`
   background-color: black;
 `;
 
-const Title = styled.h1`
-  margin: 0;
-`;
-
-const Rank = styled.h2`
-  margin: 20px 0 0 0;
-  text-transform: uppercase;
-  color: #af0000;
-`;
-
 const Navigation = styled.ul`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: center;
   display: flex;
   text-transform: uppercase;
   list-style: none;
-  margin-top: 60px;
+  margin: 50px;
   padding: 0;
 
-  li {
+  .navbar-item {
     margin: 0 20px;
   }
 
@@ -71,11 +79,6 @@ const Navigation = styled.ul`
   a:hover {
     color: #af0000;
   }
-`;
-
-const Img = styled.img`
-  width: 300px;
-  margin: 0 0 20px 0;
 `;
 
 export default App;
