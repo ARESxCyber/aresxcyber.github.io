@@ -71,7 +71,7 @@ const Navigation = styled.ul`
 
   a {
     color: inherit;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
   }
