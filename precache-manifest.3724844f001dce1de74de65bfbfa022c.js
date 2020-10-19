@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "28b4f159735da4f8db5595a34a83a1c5",
+    "revision": "088a61596ccc5b4309a6931807c03718",
     "url": "/index.html"
   },
   {
-    "revision": "6904b231248a7c391b1e",
+    "revision": "8ecd440c18d909cfcc21",
     "url": "/static/css/main.0342c391.chunk.css"
   },
   {
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.cfdfc3ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6904b231248a7c391b1e",
-    "url": "/static/js/main.8cdec3f2.chunk.js"
+    "revision": "8ecd440c18d909cfcc21",
+    "url": "/static/js/main.9987835d.chunk.js"
   },
   {
     "revision": "a0e3be69f90b84d2f18f",
     "url": "/static/js/runtime-main.05742c74.js"
   },
   {
-    "revision": "fbb3dd03428fafc7115f4b521cee063f",
-    "url": "/static/media/ARESx_Logo.fbb3dd03.png"
+    "revision": "292d8cb82dff100e0ac7eeda85978eef",
+    "url": "/static/media/ARESx_Logo.292d8cb8.png"
   }
 ]);
