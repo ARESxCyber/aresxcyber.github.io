@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "name": "FluxCloud Serverless 2.0",
+      "category": "web",
+      "file": "fluxcloud-serverless2.md",
+      "author": "David Vandorpe"
+    },
+    {
+      "name": "FluxCloud Serverless 1.0",
+      "category": "web",
+      "file": "fluxcloud-serverless1.md",
+      "author": "Soronbe"
+    }
+  ]
+}
