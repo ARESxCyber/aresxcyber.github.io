@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "name": "Hack.lu CTF",
+      "directory": "hacklu2020"
+    },
+    {
+      "name": "n1ctf",
+      "directory": "n1ctf2020"
+    }
+  ]
+}

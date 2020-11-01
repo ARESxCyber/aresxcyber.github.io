@@ -7,7 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import Members from './pages/Members';
-import WriteUps from './pages/WriteUps';
+import Index from './pages/writeups';
 import Scores from './pages/Scores';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -26,7 +26,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/write_ups">
-            <WriteUps />
+            <Index />
           </Route>
           <Route path="/members">
             <Members />
