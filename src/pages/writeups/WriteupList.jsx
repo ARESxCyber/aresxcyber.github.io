@@ -26,10 +26,10 @@ class WriteupList extends React.PureComponent {
     render() {
         const ctf = this.props.ctf;
         if (this.state.loading) {
-            return <div>
-                <h1>{ctf.name}</h1>
-                Loading...
-            </div>;
+            return <Container>
+                <Title>{ctf.name}</Title>
+                <SubTitle>Loading...</SubTitle>
+            </Container>;
         }
 
         const writeups = this.state.writeups;
@@ -81,6 +81,13 @@ const Title = styled.h1`
     a:hover {
         color: #8b0000;
     }
+`;
+
+const SubTitle = styled.p`
+    margin: 0 0 0 15px;
+    color: #a9a9a9;
+    font-family: "Helvetica";
+    font-size: 15px;
 `;
 
 const List = styled.ul`
