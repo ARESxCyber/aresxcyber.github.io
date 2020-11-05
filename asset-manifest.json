@@ -1,23 +1,33 @@
 {
   "files": {
+    "static/js/0.03b5fdf7.chunk.js": "/static/js/0.03b5fdf7.chunk.js",
+    "static/js/0.03b5fdf7.chunk.js.map": "/static/js/0.03b5fdf7.chunk.js.map",
+    "static/js/1.ee78b99f.chunk.js": "/static/js/1.ee78b99f.chunk.js",
+    "static/js/1.ee78b99f.chunk.js.map": "/static/js/1.ee78b99f.chunk.js.map",
     "main.css": "/static/css/main.0342c391.chunk.css",
-    "main.js": "/static/js/main.56c54fa9.chunk.js",
-    "main.js.map": "/static/js/main.56c54fa9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.05742c74.js",
-    "runtime-main.js.map": "/static/js/runtime-main.05742c74.js.map",
-    "static/js/2.57355080.chunk.js": "/static/js/2.57355080.chunk.js",
-    "static/js/2.57355080.chunk.js.map": "/static/js/2.57355080.chunk.js.map",
+    "main.js": "/static/js/main.b5011bb9.chunk.js",
+    "main.js.map": "/static/js/main.b5011bb9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f20390e2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f20390e2.js.map",
+    "static/js/4.8ca9213f.chunk.js": "/static/js/4.8ca9213f.chunk.js",
+    "static/js/4.8ca9213f.chunk.js.map": "/static/js/4.8ca9213f.chunk.js.map",
+    "static/js/5.dbf07976.chunk.js": "/static/js/5.dbf07976.chunk.js",
+    "static/js/5.dbf07976.chunk.js.map": "/static/js/5.dbf07976.chunk.js.map",
+    "static/js/6.c9648ed8.chunk.js": "/static/js/6.c9648ed8.chunk.js",
+    "static/js/6.c9648ed8.chunk.js.map": "/static/js/6.c9648ed8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ea08ff93b860136bf0ede73c17b0974f.js": "/precache-manifest.ea08ff93b860136bf0ede73c17b0974f.js",
+    "precache-manifest.74ae0377542a653544d461154fe62a67.js": "/precache-manifest.74ae0377542a653544d461154fe62a67.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.0342c391.chunk.css.map": "/static/css/main.0342c391.chunk.css.map",
-    "static/js/2.57355080.chunk.js.LICENSE.txt": "/static/js/2.57355080.chunk.js.LICENSE.txt",
-    "static/media/ARESx_Logo.png": "/static/media/ARESx_Logo.292d8cb8.png"
+    "static/js/4.8ca9213f.chunk.js.LICENSE.txt": "/static/js/4.8ca9213f.chunk.js.LICENSE.txt",
+    "static/media/ARESx_Logo.png": "/static/media/ARESx_Logo.292d8cb8.png",
+    "static/media/fluxcloud-serverless1.md": "/static/media/fluxcloud-serverless1.99764914.md",
+    "static/media/fluxcloud-serverless2.md": "/static/media/fluxcloud-serverless2.4ff1909b.md"
   },
   "entrypoints": [
-    "static/js/runtime-main.05742c74.js",
-    "static/js/2.57355080.chunk.js",
+    "static/js/runtime-main.f20390e2.js",
+    "static/js/4.8ca9213f.chunk.js",
     "static/css/main.0342c391.chunk.css",
-    "static/js/main.56c54fa9.chunk.js"
+    "static/js/main.b5011bb9.chunk.js"
   ]
 }
