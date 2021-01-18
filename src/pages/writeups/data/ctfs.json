@@ -7,6 +7,10 @@
     {
       "name": "N1 CTF",
       "directory": "n1ctf2020"
+    },
+    {
+      "name": "X-MAS CTF",
+      "directory": "xmasctf2020"
     }
   ]
 }
