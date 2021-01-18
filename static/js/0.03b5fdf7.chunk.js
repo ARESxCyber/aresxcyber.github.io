@@ -1,2 +1,0 @@
-(this["webpackJsonpares-website"]=this["webpackJsonpares-website"]||[]).push([[0],{45:function(e){e.exports=JSON.parse('{"data":[{"name":"FluxCloud Serverless 2.0","category":"web","file":"fluxcloud-serverless2.md","author":"David Vandorpe"},{"name":"FluxCloud Serverless 1.0","category":"web","file":"fluxcloud-serverless1.md","author":"Soronbe"}]}')}}]);
-//# sourceMappingURL=0.03b5fdf7.chunk.js.map

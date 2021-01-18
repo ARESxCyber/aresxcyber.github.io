@@ -1,2 +1,0 @@
-(this["webpackJsonpares-website"]=this["webpackJsonpares-website"]||[]).push([[6],{183:function(s,e,t){s.exports=t.p+"static/media/fluxcloud-serverless2.4ff1909b.md"}}]);
-//# sourceMappingURL=6.c9648ed8.chunk.js.map
