@@ -5,29 +5,29 @@
     "static/js/1.ee78b99f.chunk.js": "/static/js/1.ee78b99f.chunk.js",
     "static/js/1.ee78b99f.chunk.js.map": "/static/js/1.ee78b99f.chunk.js.map",
     "main.css": "/static/css/main.0342c391.chunk.css",
-    "main.js": "/static/js/main.85f073db.chunk.js",
-    "main.js.map": "/static/js/main.85f073db.chunk.js.map",
+    "main.js": "/static/js/main.b4967553.chunk.js",
+    "main.js.map": "/static/js/main.b4967553.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f20390e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.f20390e2.js.map",
-    "static/js/4.8ca9213f.chunk.js": "/static/js/4.8ca9213f.chunk.js",
-    "static/js/4.8ca9213f.chunk.js.map": "/static/js/4.8ca9213f.chunk.js.map",
+    "static/js/4.6343d981.chunk.js": "/static/js/4.6343d981.chunk.js",
+    "static/js/4.6343d981.chunk.js.map": "/static/js/4.6343d981.chunk.js.map",
     "static/js/5.dbf07976.chunk.js": "/static/js/5.dbf07976.chunk.js",
     "static/js/5.dbf07976.chunk.js.map": "/static/js/5.dbf07976.chunk.js.map",
     "static/js/6.c9648ed8.chunk.js": "/static/js/6.c9648ed8.chunk.js",
     "static/js/6.c9648ed8.chunk.js.map": "/static/js/6.c9648ed8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3f1f1762474fd03be5e9a5882f285ba9.js": "/precache-manifest.3f1f1762474fd03be5e9a5882f285ba9.js",
+    "precache-manifest.f19cfddb49cc3897f4f9e4c90d0b0a60.js": "/precache-manifest.f19cfddb49cc3897f4f9e4c90d0b0a60.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.0342c391.chunk.css.map": "/static/css/main.0342c391.chunk.css.map",
-    "static/js/4.8ca9213f.chunk.js.LICENSE.txt": "/static/js/4.8ca9213f.chunk.js.LICENSE.txt",
+    "static/js/4.6343d981.chunk.js.LICENSE.txt": "/static/js/4.6343d981.chunk.js.LICENSE.txt",
     "static/media/ARESx_Logo.png": "/static/media/ARESx_Logo.292d8cb8.png",
     "static/media/fluxcloud-serverless1.md": "/static/media/fluxcloud-serverless1.99764914.md",
     "static/media/fluxcloud-serverless2.md": "/static/media/fluxcloud-serverless2.4ff1909b.md"
   },
   "entrypoints": [
     "static/js/runtime-main.f20390e2.js",
-    "static/js/4.8ca9213f.chunk.js",
+    "static/js/4.6343d981.chunk.js",
     "static/css/main.0342c391.chunk.css",
-    "static/js/main.85f073db.chunk.js"
+    "static/js/main.b4967553.chunk.js"
   ]
 }
