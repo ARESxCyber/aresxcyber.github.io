@@ -50,7 +50,7 @@ plaintext.
 We can do this because the IV is XOR'd with the immediate state to obtain the
 plaintext.
 
-![](cbc.png)
+![](https://aresxcyber.github.io/static/media/cbc.5946c325.png)
 
 The last thing to remember is that plaintext blocks are padded with PKCS #7 in
 AES-CBC.
