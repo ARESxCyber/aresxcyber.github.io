@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Redirect,
   Switch,
   Route,
@@ -17,7 +17,7 @@ const TEAM_ID = '128734';
 function App() {
   return (
     <Container>
-      <Router>
+      <Router basename='/'>
         <Navigation>
           <Navbar />
         </Navigation>
