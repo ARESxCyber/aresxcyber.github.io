@@ -12,6 +12,7 @@ import Scores from './pages/Scores';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
+
 const TEAM_ID = '128734';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/scores">
             <Scores />
           </Route>
+
           <Route exact path="/" render={() => (<Redirect to="/home" />)} />
         </Switch>
       </Router>

@@ -1,5 +1,9 @@
+*{
+  background-color: black;
+}
+
 body {
   margin: 0;
   font-family: 'Pathway Gothic One';
-  background-color: #222;
+
 }
