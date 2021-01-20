@@ -6,6 +6,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
 import Members from './pages/Members';
 import Index from './pages/writeups';
 import Scores from './pages/Scores';
