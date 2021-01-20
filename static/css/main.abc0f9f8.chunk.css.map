@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,EACE,qBACF,CAEA,KACE,QAAS,CACT,gCAEF","file":"main.abc0f9f8.chunk.css","sourcesContent":["*{\n  background-color: black;\n}\n\nbody {\n  margin: 0;\n  font-family: 'Pathway Gothic One';\n\n}\n"]}
