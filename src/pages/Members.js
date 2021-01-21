@@ -80,7 +80,7 @@ const IMG = styled.img`
 `;
 
 const Member = styled.div`
-  height: 500px;
+  min-height: 500px;
   width: 500px;
   border: 5px solid red;
   border-radius:20px;
@@ -89,9 +89,13 @@ const Member = styled.div`
   float:left;
   margin: 40px;
   @media only screen and (max-width: 700px) {
-    margin-bottom: 20px;
     width: 300px;
-    heigth: 10000px;
+    border: 5px solid red;
+    border-radius:20px;
+    color:red;
+    justify-content: space-around;
+    float:left;
+    margin: 40px;
 
   }
   :hover{
@@ -106,7 +110,6 @@ const Container = styled.div`
   position: absolute;
   top: 200px;
   width: 100%;
-  
   @media only screen and (max-width: 700px) {
     
   }
@@ -117,7 +120,8 @@ const Name = styled.h2`
   font-size: 30px;
   color: #af0000;
   text-align: center;
-  
+  margin-bottom: 10px;
+  margin-top: 10px;
 `;
 
 const Description = styled.p`
