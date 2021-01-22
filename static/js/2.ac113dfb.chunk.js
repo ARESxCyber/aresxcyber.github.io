@@ -1,0 +1,2 @@
+(this["webpackJsonpares-website"]=this["webpackJsonpares-website"]||[]).push([[2],{71:function(s){s.exports=JSON.parse('{"data":[{"name":"Lost List","category":"crypto","file":"lost_list/README.md","author":"qxxxb"}]}')}}]);
+//# sourceMappingURL=2.ac113dfb.chunk.js.map
