@@ -36,7 +36,9 @@ function App() {
           <Route path="/scores">
             <Scores />
           </Route>
-
+          <Route path="/home">
+            <Home />
+          </Route>
           <Route exact path="/" render={() => (<Redirect to="/home" />)} />
         </Switch>
       </Router>

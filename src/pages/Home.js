@@ -1,25 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import styled from 'styled-components';
 import AnimatedNumber from '@jhonnold/react-animated-number';
+import axios from 'axios';
 
 const image = require('../images/ARESx_Logo.png');
+var updatedrank = false;
 
 const Home = () => {
-    const [rank, setRank] = useState(247);
-    const [rank2, setRank2] = useState(38);
-    return (
+
+    const [rank, setRank] = useState(100);
+    const [rank2, setRank2] = useState(100);
+    const url = "https://ctftime.org/api/v1/teams/128734/";
+    const url2 = "https://ctftime.org/team/128734";
+    var updatedrank = false;
+
+    useEffect(() => {
+      axios.get(url)
+        .then(response => {
+          setRank(response.data.rating[0]['2021'].rating_place)
+        })
+    }, [url])
+
+    if(rank!==100){
+      return (
         <Container>
             <Img src={image}/>
             <Title>ARESx</Title>
             <Rank>
-                CTFTime Global Rank: <AnimatedNumber initial={1000} duration={2000} number={rank} component="span" format={Math.floor} fps={20} />
-            </Rank>
-            <Rank>
-                CTFTime USA Rank: <AnimatedNumber initial={500} duration={2000} number={rank2} component="span" format={Math.floor} fps={20} />
+                CTFTime Global Rank: <AnimatedNumber initial={1000} duration={1000} number={rank} component="span" format={Math.floor} fps={20} />
             </Rank>
         </Container>
-    )
+    )}
+    else{
+      return (
+        <Container>
+            <Img src={image}/>
+            <Title>ARESx</Title>
+            <Rank>
+              Loading...
+            </Rank>
+        </Container>
+      )
+    }
 };
+
+
 
 const Container = styled.div`
   justify-content: center;

@@ -106,12 +106,14 @@ const Member = styled.div`
 `;
 
 const Container = styled.div`
-  
+  margin: auto;
   position: absolute;
+  align: center;
   top: 200px;
   width: 100%;
   @media only screen and (max-width: 700px) {
-    
+    min-width: 100%;
+    margin: 0;
   }
 `;
 

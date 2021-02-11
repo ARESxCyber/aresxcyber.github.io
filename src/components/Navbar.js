@@ -35,6 +35,9 @@ const Navbar = () => {
                     <NavLink className="navbar-item" activeClassName="is-active" to="/scores">
                         Scores
                     </NavLink>
+                    <NavLink className="navbar-item" activeClassName="is-active" to="/home">
+                        Home
+                    </NavLink>
                 </div>
             </div>
         </div>
