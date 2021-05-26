@@ -16,7 +16,7 @@ Docsify builds the website from markdown files, so you can embed pictures, code,
 
 Each sidebar page is a markdown file on its own. For CTF writeups, each CTF has a folder to include the different pictures and challenges. Each challenge has it's own markdown file. Then they are own embedded in the CTF main markdown file. For example:
 
-```bash
+```
 |____CTF1
 | |____main.md
 | |____challenge1.md
