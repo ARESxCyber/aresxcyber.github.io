@@ -6,9 +6,9 @@
 
 - We participate in CTFs on a weekly basis
 - Our members are from all over the world
-- We're currently in the top 25 on CTF Time!
+- We're currently in the top 25 on CTFtime!
 
-[CTF Time](https://ctftime.org/team/128734)
+[CTFtime](https://ctftime.org/team/128734)
 [Explore](/Home/)
 
 ![color](#ffffff)
