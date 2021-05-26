@@ -14,15 +14,19 @@ Docsify builds the website from markdown files, so you can embed pictures, code,
 
 ## Folders structure
 
-Each sidebar element shall have its own folder with the main README.md file and any other attachements. For example:
+Each sidebar page is a markdown file on its own. For CTF writeups, each CTF has a folder to include the different pictures and challenges. Each challenge has it's own markdown file. Then they are own embedded in the CTF main markdown file. For example:
 
-```
-|____Home
-| |____README.md
-| |____picture.png
-|____Writeups
-| |____README.md
-| |____anotherPicture.png
+```bash
+|____CTF1
+| |____main.md
+| |____challenge1.md
+| |____challenge2.md
+| |____picture1.png
+|____CTF2
+| |____main.md
+| |____challenge1.md
+| |____picture1.png
+| |____picture2.png
 ```
 
 ## Contributing
