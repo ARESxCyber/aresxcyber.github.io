@@ -32,7 +32,7 @@ We use `main` as our main branch and the `./docs` folder is pushed on github pag
 You can use pull requests to contribute. First you will need to create a branch. Use the following naming conventions:
 
 - `website/{type}/{description}` for branches involving work on the website design or maintenance
-  - `type` is either `design` for design work (colors, layout, etc...), `content` for added information (team info, fix text, etc...) or `bug-fix` (something that was broken and got fixed).
+  - `type` is either `design` for design work (colors, layout, devops, etc...), `content` for added information (team info, fix text, etc...) or `bug-fix` (something that was broken and got fixed).
   - `description` is a 2-3 words summary of the branch main changes.
 - `writeups/{ctf}/{member}` for branches involving writeups
   - `ctf` is the name of the CTF.
