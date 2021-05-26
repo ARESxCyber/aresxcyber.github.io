@@ -9,6 +9,6 @@
 - We're currently in the top 25 on CTFtime!
 
 [CTFtime](https://ctftime.org/team/128734)
-[Explore](/Home/)
+[Explore](home.md)
 
 ![color](#ffffff)

@@ -1,5 +1,7 @@
-<!-- docs/_sidebar.md -->
-* [Home](/Home/)
-* [Team members](/TeamMembers/)
-* [Writeups](/Writeups/)
+- Welcome
 
+  - [Home](home.md)
+  - [Team](team.md)
+
+- Writeups
+  - [Template](/CTF1/main.md)
