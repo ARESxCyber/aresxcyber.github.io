@@ -1,10 +1,6 @@
-# Documentation PR
-
-Pull request for documentation change
-
 ## Summary
 
-Please include a summary of the changes the new documentation covers, motivation, or context of the PR. Link any relevant issues. List down the challenge titles if it's a writeup PR.
+Please include a summary of the website changes involved, motivation, or context of the PR. Link any relevant issues. List down the challenge titles if it's a writeup PR.
 
 Summary:
 
