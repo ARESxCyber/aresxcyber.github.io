@@ -6,4 +6,4 @@
   - [Team](team.md)
 
 - Writeups
-  - [Template](/CTF1/main.md)
+  - [Pwn2Win CTF 2021](/pwn2win21/main.md)
