@@ -1,3 +1,3 @@
 # Home
 
-Home page stuff can go here
+_Coming soon_
