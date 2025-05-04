@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARESX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #0a0a0a;
+            color: #f1f1f1;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+        
+        .project-item {
+            border-left: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .project-item:hover {
+            border-left: 2px solid #ff3333;
+            padding-left: 8px;
+            background-color: rgba(255, 51, 51, 0.05);
+        }
+        
+        .team-member {
+            border-bottom: 1px solid #222;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-white text-white">
+    <div class="grid-pattern min-h-screen">
+        <div class="container mx-auto max-w-3xl px-4 py-16">
+            <header class="mb-20">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="logo.webp" class="h-auto max-w-60 rounded-lg" />
+                </div>
+                <div class="flex items-center justify-center mb-4">
+                    <div class="w-16 h-1 bg-red-600 mr-3"></div>
+                    <h1 class="text-5xl font-bold tracking-tighter">
+                        <a href="#" class="text-black hover:text-red-600 transition duration-300">ARESX</a>
+                    </h1>
+                    <div class="w-16 h-1 bg-red-600 ml-3"></div>
+                </div>
+                <p class="text-center text-black font-light text-sm tracking-wider uppercase">pwning at the edge of what's possible</p>
+                <div class="mt-6 text-center">
+                    <span class="px-3 py-1 text-xs bg-red-600 text-black rounded-full tracking-wider uppercase font-bold">DEFCON CTF Finalists 2024, 2025</span>
+                </div>
+            </header>
+
+            <section class="mb-20">
+                <h2 class="text-lg uppercase tracking-widest font-light text-black mb-8 flex items-center">
+                    <span class="w-6 h-px bg-red-600 mr-3"></span>
+                    Achievements
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-red-600 mt-2 mr-3 rounded-full"></div>
+                        <div>
+                            <span class="text-red-600 font-bold">DEFCON 32 CTF</span>
+                            <p class="text-black text-sm">Qualified for finals, placed 11th overall</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-red-600 mt-2 mr-3 rounded-full"></div>
+                        <div>
+                            <span class="text-red-600 font-bold">CTFTime 2024</span>
+                            <p class="text-black text-sm">Part of a merger, placing 2nd overall against 1200+ teams</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-red-600 mt-2 mr-3 rounded-full"></div>
+                        <div>
+                            <span class="text-red-600 font-bold">HITCON CTF</span>
+                            <p class="text-black text-sm">1st place 2024, 2nd place 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-red-600 mt-2 mr-3 rounded-full"></div>
+                        <div>
+                            <span class="text-red-600 font-bold">0CTF</span>
+                            <p class="text-black text-sm">1st place 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <h2 class="text-lg uppercase tracking-widest font-light text-black mb-8 flex items-center">
+                    <span class="w-6 h-px bg-red-600 mr-3"></span>
+                    Projects
+                </h2>
+                <div class="space-y-6">
+                    
+                    <a href="https://github.com/aresxcyber" class="block pl-3 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <div class="project-item">
+                            <p class="text-red-600 font-bold hover:underline">hexbyte</p>
+                            <p class="text-black text-sm">Advanced binary instrumentation framework for automated vulnerability discovery</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block pl-3 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <div class="project-item">
+                            <p class="text-red-600 font-bold hover:underline">kernopal</p>
+                            <p class="text-black text-sm">Kernel exploitation toolkit specialized in bypassing modern mitigations</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block pl-3 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <div class="project-item">
+                            <p class="text-red-600 font-bold hover:underline">phantom</p>
+                            <p class="text-black text-sm">Memory corruption detection and prevention system with near-zero overhead</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block pl-3 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <div class="project-item">
+                            <p class="text-red-600 font-bold hover:underline">bluescan</p>
+                            <p class="text-black text-sm">Next-gen protocol fuzzer for embedded systems and IoT devices</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+<section class="mb-20">
+  <h2 class="text-lg uppercase tracking-widest font-light text-black mb-8 flex items-center">
+    <span class="w-6 h-px bg-red-600 mr-3"></span>
+    Team
+  </h2>
+
+  <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+
+    <!-- d4rk -->
+    <div onclick="window.location.href='https://twitter.com/d4rk';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/d4rk.webp" alt="d4rk" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">d4rk</p>
+          <p class="text-black text-xs opacity-100">"The future of security is here"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span
+        class="bg-blue-400 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">
+        blockchain
+      </span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/d4rk.webp" alt="d4rk"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇺🇸</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">d4rk</p>
+        <p class="text-center text-xs text-black mb-4">
+            "The future of security is here"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/d4rk" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/d4rk" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/d4rk" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- mirkhoff -->
+    <div onclick="window.location.href='https://twitter.com/mirkhoff';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/mirkhoff.webp" alt="mirkhoff" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">mirkhoff</p>
+          <p class="text-black text-xs opacity-100">"browser challs turn him into mirkhON"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+      <span class="bg-purple-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-12 opacity-50 group-hover:opacity-100 transition">rev</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/mirkhoff.webp" alt="mirkhoff"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇷🇸</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">mirkhoff</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Reversing the code, one byte at a time"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/mirkhoff" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/mirkonikic" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/_nikic_m" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- bitfriends -->
+    <div onclick="window.location.href='https://twitter.com/BitFriends1';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/bitfriends.webp" alt="bitfriends" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">bitfriends</p>
+          <p class="text-black text-xs opacity-100">"if u fw osint/stego js sybau 🥀"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/bitfriends.webp" alt="bitfriends"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">bitfriends</p>
+        <p class="text-center text-xs text-black mb-4">
+            "if u fw osint/stego js sybau 🥀"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/BitFriends1" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/BitFriends1" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/bitfriends" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- varun -->
+    <div onclick="window.location.href='https://twitter.com/Varun_5';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/varun.webp" alt="varun" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">varun_5</p>
+          <p class="text-black text-xs opacity-100">"In reverse we trust"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-purple-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">rev</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/varun.webp" alt="varun"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">varun</p>
+        <p class="text-center text-xs text-black mb-4">
+            "In reverse we trust"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- kishou -->
+    <div onclick="window.location.href='https://twitter.com/kishou_yusa';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/kishou.webp" alt="kishou" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">kishou_yusa</p>
+          <p class="text-black text-xs opacity-100">"Reversing is my game"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-purple-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">rev</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/kishou.webp" alt="kishou"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">kishou</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Reversing is my game"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- charif -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/charif.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">charif</p>
+          <p class="text-black text-xs opacity-100">"Every flaw is an opportunity"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/charif.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">charif</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Every flaw is an opportunity"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- sorc -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/sorc.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">sorc</p>
+          <p class="text-black text-xs opacity-100">"In hacking, the devil isn't in the code , he is the code you didn’t read."</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-green-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">web</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/sorc.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">charif</p>
+        <p class="text-center text-xs text-black mb-4">
+            "In hacking, the devil isn't in the code , he is the code you didn’t read."
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- null_awe -->
+    <div onclick="window.location.href='https://twitter.com/NullAwe';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/null_awe.webp" alt="null_awe" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">null_awe</p>
+        <p class="text-black text-xs opacity-100">"nun"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-black text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">osint</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/null_awe.webp" alt="null_awe"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🦌</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">null_awe</p>
+        <p class="text-center text-xs text-black mb-4">
+            "nun"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://x.com/NullAwe" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/NullAwe" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/null_awe" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    </div>  
+
+    <!-- vish -->
+    <div onclick="window.location.href='https://twitter.com/vish';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/vish.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">vishiswoz</p>
+          <p class="text-black text-xs opacity-100">"him"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-purple-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">crypto</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/vish.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md"></div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">vishiswoz</p>
+        <p class="text-center text-xs text-black mb-4">
+            "him"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- aptx -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/aptx.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">aptx</p>
+        <p class="text-black text-xs opacity-100">"Every flaw is an opportunity"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/aptx.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">aptx</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Every flaw is an opportunity"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    </div>  
+
+    <!-- kroot -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/kroot.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">kroot</p>
+        <p class="text-black text-xs opacity-100">"Every flaw is an opportunity"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/kroot.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">kroot</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Every flaw is an opportunity"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <!-- flocto -->
+    <div onclick="window.location.href='https://x.com/fl0ct0';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/flocto.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">flocto</p>
+        <p class="text-black text-xs opacity-100">"im hungry"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">rev</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/flocto.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">😋</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">flocto</p>
+        <p class="text-center text-xs text-black mb-4">
+            "im hungry"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://x.com/fl0ct0" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <!-- sbg -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/sbg.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">superbeetlegamer</p>
+        <p class="text-black text-xs opacity-100">"Every flaw is an opportunity"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/sbg.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">superbeetlegamer</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Every flaw is an opportunity"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+
+        <!-- m0z -->
+    <div onclick="window.location.href='https://twitter.com/m0z';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/m0z.webp" alt="mirkhoff" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">m0z</p>
+          <p class="text-black text-xs opacity-100">"bed-side mom clobbering"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-green-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">web</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/m0z.webp" alt="mirkhoff"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇷🇸</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">m0z</p>
+        <p class="text-center text-xs text-black mb-4">
+            "bed-side mom clobbering"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/mirkhoff" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/mirkonikic" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/mirkonikic" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- not_master08 -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/not_master08.png" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">NOT_MASTER08</p>
+        <p class="text-black text-xs opacity-100">"Every flaw is an opportunity"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/not_master08.png" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">NOT_MASTER08</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Every flaw is an opportunity"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    </div>  
+
+    <!-- nop -->
+    <div onclick="window.location.href='https://twitter.com/charif';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/nop.webp" alt="charif" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">nop</p>
+        <p class="text-black text-xs opacity-100">"Every flaw is an opportunity"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/nop.webp" alt="charif"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇦🇶</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">nop</p>
+        <p class="text-center text-xs text-black mb-4">
+            "Every flaw is an opportunity"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    </div>  
+  
+    <!-- siunam -->
+    <div onclick="window.location.href='https://twitter.com/siunam321';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/siunam.webp" alt="siunam" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">siunam</p>
+        <p class="text-black text-xs opacity-100">"I love web security and 0 days :D"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-green-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">web</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/siunam.webp" alt="siunam"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md"></div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">siunam</p>
+        <p class="text-center text-xs text-black mb-4">
+            "I love web security and 0 days :D"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/siunam321" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    </div>  
+
+    <!-- retr0 -->
+    <div onclick="window.location.href='https://twitter.com/retr0rocks';"
+      class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+      <div class="flex items-center space-x-4">
+        <img src="team_members/retr0.webp" alt="retr0" class="w-16 h-16 rounded-md">
+        <div>
+          <p class="text-red-600 font-bold">retr0</p>
+          <p class="text-black text-xs opacity-100">"probably sleeping"</p>
+        </div>
+      </div>
+      <!-- category -->
+      <span class="bg-yellow-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">pwn</span>
+      <!-- hidden card -->
+      <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/retr0.webp" alt="retr0"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🧙‍♂️</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">retr0</p>
+        <p class="text-center text-xs text-black mb-4">
+            "probably sleeping"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://twitter.com/mirkhoff" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/mirkonikic" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/_nikic_m" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-700 hover:text-blue-800 text-2xl transition">
+            <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+</section>
+
+        <!-- old team section
+            <section class="mb-20">
+                <h2 class="text-lg uppercase tracking-widest font-light text-black mb-8 flex items-center">
+                    <span class="w-6 h-px bg-red-600 mr-3"></span>
+                    Team
+                </h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="team-member pb-4 flex items-center hover:scale-110 hover:border-none transition-transform duration-300 cursor-pointer relative" onclick="window.location.href='https://twitter.com/d4rk';">
+                        <img src="team_members/d4rk.webp" alt="d4rk" class="w-16 h-16 rounded-md mr-4">
+                        <div class="team-info">
+                            <p class="text-red-600 font-bold">d4rk</p>
+                            <p class="text-black text-xs">
+                                "The future of security is here"
+                            </p>
+                        </div>
+                        <span class="bg-blue-500 text-white px-2 rounded-full text-xs absolute top-2 right-2 opacity-70">blockchain</span>
+                    </div>
+                    <div class="team-member pb-4 flex items-center hover:scale-110 hover:border-none transition-transform duration-300 cursor-pointer relative" onclick="window.location.href='https://twitter.com/mirkhoff';">
+                        <img src="team_members/mirkhoff.webp" alt="mirkhoff" class="w-16 h-16 rounded-md mr-4">
+                        <div class="team-info">
+                            <p class="text-red-600 font-bold">mirkhoff</p>
+                            <p class="text-black text-xs">
+                                "Reversing the code, one byte at a time"
+                            </p>
+                        </div>
+                        <span class="bg-yellow-500 text-white px-2 rounded-full text-xs absolute top-2 right-2 opacity-70">pwn</span>
+                        <span class="bg-purple-500 text-white px-2 rounded-full text-xs absolute top-2 right-12 opacity-70">rev</span>
+                    </div>
+                    <div class="team-member pb-4 flex items-center hover:scale-110 hover:border-none transition-transform duration-300 cursor-pointer relative" onclick="window.location.href='https://twitter.com/bitfriends';">
+                        <img src="team_members/bitfriends.webp" alt="bitfriends" class="w-16 h-16 rounded-md mr-4">
+                        <div class="team-info">
+                            <p class="text-red-600 font-bold">bitfriends</p>
+                            <p class="text-black text-xs">
+                                "Exploit everything, trust nothing"
+                            </p>
+                        </div>
+                        <span class="bg-yellow-500 text-white px-2 rounded-full text-xs absolute top-2 right-2 opacity-70">pwn</span>
+                    </div>
+                    <div class="team-member pb-4 flex items-center hover:scale-110 hover:border-none transition-transform duration-300 cursor-pointer relative" onclick="window.location.href='https://twitter.com/varun_5';">
+                        <img src="team_members/varun.webp" alt="varun_5" class="w-16 h-16 rounded-md mr-4">
+                        <div class="team-info">
+                            <p class="text-red-600 font-bold">varun_5</p>
+                            <p class="text-black text-xs">
+                                "In reverse we trust"
+                            </p>
+                        </div>
+                        <span class="bg-purple-500 text-white px-2 rounded-full text-xs absolute top-2 right-2 opacity-70">rev</span>
+                    </div>
+                    <div class="team-member pb-4 flex items-center hover:scale-110 hover:border-none transition-transform duration-300 cursor-pointer relative" onclick="window.location.href='https://twitter.com/charif';">
+                        <img src="team_members/charif.webp" alt="charif" class="w-16 h-16 rounded-md mr-4">
+                        <div class="team-info">
+                            <p class="text-red-600 font-bold">charif</p>
+                            <p class="text-black text-xs">
+                                "Every flaw is an opportunity"
+                            </p>
+                        </div>
+                        <span class="bg-orange-500 text-white px-2 rounded-full text-xs absolute top-2 right-2 opacity-70">pwn</span>
+                    </div>
+                    <div class="team-member pb-4 flex items-center hover:scale-110 hover:border-none transition-transform duration-300 cursor-pointer relative" onclick="window.location.href='https://twitter.com/kishou_yusa';">
+                        <img src="team_members/kishou.webp" alt="kishou_yusa" class="w-16 h-16 rounded-md mr-4">
+                        <div class="team-info">
+                            <p class="text-red-600 font-bold">kishou_yusa</p>
+                            <p class="text-black text-xs">
+                                "Reversing is my game"
+                            </p>
+                        </div>
+                        <span class="bg-teal-500 text-white px-2 rounded-full text-xs absolute top-2 right-2 opacity-70">rev</span>
+                    </div>
+                </div>
+            </section>
+        -->
+
+            <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+
+            <section class="mb-20">
+                <h2 class="text-lg uppercase tracking-widest font-light text-black mb-8 flex items-center">
+                    <span class="w-6 h-px bg-red-600 mr-3"></span>
+                    Connect
+                </h2>
+                <div class="flex items-center space-x-4">
+                    <a href="https://twitter.com/ARESxCTF" class="text-black px-4 py-2 bg-white border border-red-600 hover:bg-red-600 hover:text-white transition duration-300 flex items-center">
+                        <i class="fab fa-twitter mr-2"></i>@ARESxCTF
+                    </a>
+                    <p class="text-gray-500 text-sm">aresxcyber [at] gmail.com</p>
+                </div>
+            </section>
+
+            <footer class="mt-32 pt-6 border-t border-gray-800 text-gray-600 text-xs flex justify-between items-center">
+                <p>ARESX © 2025</p>
+                <p class="text-right">We believe in responsible disclosure</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
