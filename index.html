@@ -49,22 +49,22 @@
 <body class="bg-white text-white">
     <div class="grid-pattern min-h-screen">
         <div class="container mx-auto max-w-3xl px-4 py-16">
-            <header class="mb-20">
-                <div class="flex items-center justify-center mb-4">
-                    <img src="logo.webp" class="h-auto max-w-60 rounded-lg" />
-                </div>
-                <div class="flex items-center justify-center mb-4">
-                    <div class="w-16 h-1 bg-red-600 mr-3"></div>
-                    <h1 class="text-5xl font-bold tracking-tighter">
-                        <a href="#" class="text-black hover:text-red-600 transition duration-300">ARESX</a>
+            <header class="relative w-full overflow-hidden mb-10">
+                <img id="dynamicBanner" src="assets/aresx_banner.png" class="w-full h-auto block rounded-lg" />
+                
+                <div class="absolute bottom-0 left-0 w-full flex flex-col items-center justify-end text-center px-4 pb-8">
+                  <div class="flex items-center justify-center mb-3">
+                    <div class="w-16 h-1 bg-red-600 mr-3 border-black border"></div>
+                    <h1 class="text-5xl font-bold tracking-tighter text-white drop-shadow-lg">
+                      <a href="#" class="hover:text-red-500 transition duration-300">ARESX</a>
                     </h1>
-                    <div class="w-16 h-1 bg-red-600 ml-3"></div>
+                    <div class="w-16 h-1 bg-red-600 ml-3 border-black border"></div>
+                  </div>
+                  <span class="border border-black px-4 py-2 text-xs bg-red-600 text-black rounded-full tracking-wider uppercase font-bold shadow-md">
+                    DEFCON CTF Finalists 2024, 2025
+                  </span>
                 </div>
-                <p class="text-center text-black font-light text-sm tracking-wider uppercase"></p>
-                <div class="mt-6 text-center">
-                    <span class="px-3 py-1 text-xs bg-red-600 text-black rounded-full tracking-wider uppercase font-bold">DEFCON CTF Finalists 2024, 2025</span>
-                </div>
-            </header>
+              </header>
 
             <section class="mb-20">
                 <h2 class="text-lg uppercase tracking-widest font-light text-black mb-8 flex items-center">
@@ -828,6 +828,45 @@
       </div>
     </div>
 
+    <!-- ✅ moud4 -->
+    <div onclick="window.location.href='https://twitter.com/M0ud4';"
+    class="relative group cursor-pointer bg-white p-4 rounded-md hover:shadow-lg overflow-visible">
+    <div class="flex items-center space-x-4">
+        <img src="team_members/mouda.webp" alt="mouda" class="w-16 h-16 rounded-md">
+        <div>
+        <p class="text-red-600 font-bold">m0ud4</p>
+        <p class="text-black text-xs opacity-100">"probably sleeping"</p>
+        </div>
+    </div>
+    <!-- category -->
+    <span class="bg-blue-500 text-white px-2 py-0.5 rounded-full text-xs absolute top-2 right-2 opacity-50 group-hover:opacity-100 transition">rev</span>
+    <!-- hidden card -->
+    <div
+        class="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 scale-95 opacity-0 pointer-events-none group-hover:scale-100 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center z-20 w-64 border border-gray-200">
+        <div class="relative mb-4">
+            <img src="team_members/mouda.webp" alt="mouda"
+            class="w-28 h-28 rounded-md object-cover">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white text-white text-xl px-1 rounded-md">🇹🇳</div>
+        </div>
+        <p class="text-xl text-red-600 font-extrabold mb-1 tracking-wide">m0ud4</p>
+        <p class="text-center text-xs text-black mb-4">
+            "probably sleeping"
+        </p>
+        <!-- socials -->
+        <div class="flex justify-center space-x-4">
+            <a href="https://x.com/M0ud4" onclick="event.stopPropagation();" target="_blank"
+            class="text-blue-500 hover:text-blue-600 text-2xl transition">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/M0ud4" onclick="event.stopPropagation();" target="_blank"
+            class="text-gray-800 hover:text-black text-2xl transition">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+  
+
     </div>
 </section>
 
@@ -902,7 +941,33 @@
                 </div>
             </section>
         -->
-
+        <script>
+            const images = [
+              "assets/aresx_banner.png",
+              "assets/aresx_banner_1.png",
+              "assets/aresx_banner_2.png",
+              "assets/aresx_banner_3.png",
+              "assets/aresx_banner_4.png",
+              "assets/aresx_banner_5.png",
+              "assets/aresx_banner_6.png",
+              "assets/aresx_banner_7.png",
+              "assets/aresx_banner_8.png",
+              "assets/aresx_banner_9.png",
+              "assets/aresx_banner_10.png",
+              "assets/aresx_banner_11.png",
+              "assets/aresx_banner_12.png",
+              "assets/aresx_banner_13.png",
+              "assets/aresx_banner_14.png",
+              "assets/aresx_banner_15.png",
+              "assets/aresx_banner_16.png",
+              "assets/aresx_banner_17.png",
+              "assets/aresx_banner_18.png",
+              "assets/aresx_banner_19.png"
+            ];
+          
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            document.getElementById("dynamicBanner").src = randomImage;
+        </script>
             <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
 
             <section class="mb-20">
